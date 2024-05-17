@@ -31,6 +31,8 @@ const Admin = () => {
           <div className="link">
           <Link to={'manage-user'}>Manage-user </Link>
           </div>
+          </li>
+          <li>
           <div className="link">
           <Link to={'manage'}><SiProducthunt /></Link>
           </div>
