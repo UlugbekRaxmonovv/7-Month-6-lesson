@@ -25,11 +25,12 @@ const Admin = () => {
      </div>
         <ul>
         <li>
-        <div className="link">
-          <Link to={'manage'}><SiProducthunt /></Link>
-          </div>
+        
           <div className="link">
           <Link to={'manage'}>Manage-Product </Link>
+          </div>
+          <div className="link">
+          <Link to={'manage'}><SiProducthunt /></Link>
           </div>
         </li>
         <li>
