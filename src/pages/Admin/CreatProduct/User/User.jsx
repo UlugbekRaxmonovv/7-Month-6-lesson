@@ -1,11 +1,19 @@
-import React from 'react';
+import React,{useEffect}from 'react';
 import './User.css'
 import {usePutUserMutation} from '../../../../components/context/api/User'
+import { toast } from 'react-toastify';
 
 const User = ({setData,data}) => {
     const [updateUser,{isLoading,isSuccess}] = usePutUserMutation()
   
-
+   useEffect(() => {
+   if(isSuccess)
+   {
+    setData(null)
+  toast.success('A new reference has been created')
+   }
+   },[isSuccess])
+    
     const AddCard = (e) => {
         e.preventDefault()
         let links = {
