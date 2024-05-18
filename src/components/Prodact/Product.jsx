@@ -1,8 +1,11 @@
 import React,{memo} from 'react';
 import './Prodact.css'
 import {useDeletUserMutation} from '../../components/context/api/User'
+
 const Product = ({product,isAdmin}) => {
   const [deletUser,{data,isError,isLoading,isSuccess,error}] = useDeletUserMutation()
+  const [editUser,setEditUser] = React.useState(null)
+  console.log(editUser);
 
   const handelDeletUser = (id) => {
     deletUser(id)
@@ -17,7 +20,8 @@ const Product = ({product,isAdmin}) => {
             <p>{inx.Yoshi}</p>
             {
               isAdmin ?
-              <button onClick={() =>handelDeletUser(inx.id)}>delet</button>
+                <button onClick={() =>handelDeletUser(inx.id)}>delet</button>
+
               :
               <></>
             }
@@ -30,6 +34,7 @@ const Product = ({product,isAdmin}) => {
         <div className="wrapper">
             {cards}
         </div>
+
         </div>
     );
 }

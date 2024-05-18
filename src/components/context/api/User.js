@@ -24,6 +24,14 @@ export const productApi = api.injectEndpoints({
       body,  
      }),
      invalidatesTags: ["User"],
+    }),
+    PutUser: build.mutation({
+      query:({body,id}) => ({
+        url: `/card/${id}`,
+        method: 'PUT',
+        body,  
+       }),
+       invalidatesTags: ["User"],
     })
 }),
 })
@@ -32,4 +40,5 @@ export const {
   useGetUsersQuery,
   useDeletUserMutation,
   usePostUserMutation,
+  usePutUserMutation,
 } = productApi

@@ -40,14 +40,6 @@ const Admin = () => {
           <Link to={'manage'}>Manage-Product </Link>
           </div>
         </li>
-        <li>
-          <div className="link">
-          <Link to={'manage'}><FaUserCircle /></Link>
-          </div>
-          <div className="link">
-          <Link to={'manage-user'}>Manage-user </Link>
-          </div>
-          </li>
 
           <li>
         <div className="link">

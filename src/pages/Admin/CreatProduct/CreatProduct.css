@@ -1,0 +1,67 @@
+.wrapper{
+
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 0;
+}
+.card{
+    max-width: 250px;
+    width: 100%;
+    padding: 0px 5px;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 20px;
+
+}
+.hammasi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    transition: all .15s linear;
+}
+.hammasi_all >img{
+    border-radius: 4px;
+    width: 150px;
+
+}
+.hammasi:hover img{
+    transform: scale(1.05);
+}
+
+.hammasi_all button{
+    padding: 4px 12px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 8px;
+    background-color: bisque;
+    opacity: 0;
+    margin-top: 15px;
+    transition: all .2s linear;
+    
+
+}
+.hammasi_all h3{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0;
+    color: gray;
+}
+.hammasi_all p{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: gray;
+}
+.hammasi:hover .hammasi_all button{
+    opacity: 1;
+    margin-top: 5px
+}
+.btn8{
+    display: flex;
+    align-items: center;
+    margin-left: -50px;
+}
